@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+    background-color: #162037;
+}
+
+
+:root{
+    --secondary_color: #dc3545;
+    --primary_color: #0dcaf0;
+}
+
+/* header section start */
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+	color: var(--primary_color);
+}
+.navbar-light .navbar-nav .nav-link {
+	color: var(--primary_color);
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link{
+    transition: .4s;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: var(--secondary_color);
+    margin-top: 2px;
+}
+
+
+/* home section start */
+.multiple_text {
+    color: var(--secondary_color);
+    font-weight: bold;
+    font-size: 27px;
+    animation: blink 1s infinite;
+  }
+
+
+/* about section starat */
+.about_section .all_cont h1 {
+	font-size: 80px;
+}
+.about_section img{
+    width: 90%;
+    height: 60vh;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 100% !important;
+    box-shadow: 0 0 50px var(--primary_color);
+}
+.about_section .all_cont .about_icon i{
+    text-decoration: none;
+    border-radius: 50%;
+    color: var(--primary_color);
+    border: 1px solid var(--primary_color);
+    margin: 8px;
+    transition: .4s;
+}
+.about_section .all_cont .about_icon i:hover{
+    background-color: var(--secondary_color);
+    color: #fff;
+    transform: scale(1.2);
+    border-color: var(--secondary_color);
+}
+
+/* service section start*/
+.service_section .servi_cont{
+    transition: .4s;
+}
+.service_section .servi_cont:hover{
+   margin-top: -10px !important;
+   box-shadow: 0 0 10px var(--primary_color);
+}
+
+/* skill section start */
+.skill_section .main_cont .skill_head h3{
+    position: relative;
+}
+.skill_section .main_cont .skill_head h3::before {
+	content: '';
+	position: absolute;
+	width: 10%;
+	height: 8%;
+	background-color: var(--secondary_color);
+	top: 14px;
+	left: 175px;
+}
+.skill_section .main_cont .skill_head h3::after {
+	content: '';
+	position: absolute;
+	width: 16%;
+	height: 8%;
+	background-color: var(--secondary_color);
+	top: 26px;
+	left: 175px;
+}
+.skill_section .main_cont .skill_head1 h3{
+    position: relative;
+}
+.skill_section .main_cont .skill_head1 h3::before {
+	content: '';
+	position: absolute;
+	width: 10%;
+	height: 8%;
+	background-color: var(--secondary_color);
+	top: 14px;
+	left: 260px;
+}
+.skill_section .main_cont .skill_head1 h3::after {
+	content: '';
+	position: absolute;
+	width: 16%;
+	height: 8%;
+	background-color: var(--secondary_color);
+	top: 26px;
+	left: 260px;
+}
+
+/* project section start */
+.project_section .tab-pane img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-bottom: 15px;
+	border: 2px solid var(--primary_color);
+}
+
+
+/* blog section start */
+.blog_section .blog_head h5{
+	color: var(--secondary_color);
+}
+.blog_section .blog_head h1{
+	color: var(--primary_color);
+}
+.blog_section .card img{
+	transition: .4s;
+}
+.blog_section .card img:hover {
+	transform: scale(1.2);
+}
+
+
+/* contact section */
+.contact-section .text-area h4{
+	color: var(--primary_color);
+}
